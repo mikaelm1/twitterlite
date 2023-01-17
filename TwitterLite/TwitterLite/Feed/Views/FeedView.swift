@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import TwitterUI
 
 struct FeedView: View {
     @ObservedObject var viewModel: FeedViewModel
@@ -16,7 +17,7 @@ struct FeedView: View {
             case .loading:
                 Text("Loading")
             case .networkError:
-                Text("Networking Error")
+                ErrorView()
             case .content(let posts):
                 ForEach(posts) { post in
                     VStack {

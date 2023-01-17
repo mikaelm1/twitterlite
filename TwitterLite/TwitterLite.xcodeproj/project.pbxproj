@@ -21,6 +21,7 @@
 		704A0DED2976337D0050E314 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704A0DEC2976337D0050E314 /* FeedViewModel.swift */; };
 		704A0DF0297633A60050E314 /* PostResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704A0DEF297633A60050E314 /* PostResponseModel.swift */; };
 		704A0DF22976347A0050E314 /* FeedViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704A0DF12976347A0050E314 /* FeedViewModelTests.swift */; };
+		704A0E5029767B210050E314 /* TwitterUI in Frameworks */ = {isa = PBXBuildFile; productRef = 704A0E4F29767B210050E314 /* TwitterUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		704A0DEC2976337D0050E314 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		704A0DEF297633A60050E314 /* PostResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostResponseModel.swift; sourceTree = "<group>"; };
 		704A0DF12976347A0050E314 /* FeedViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModelTests.swift; sourceTree = "<group>"; };
+		704A0E4D29767B0A0050E314 /* TwitterUI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TwitterUI; path = ../TwitterUI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704A0E5029767B210050E314 /* TwitterUI in Frameworks */,
 				704A0DE7297633180050E314 /* LoremSwiftum in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,10 +92,12 @@
 		704A0DA5297632280050E314 = {
 			isa = PBXGroup;
 			children = (
+				704A0E4D29767B0A0050E314 /* TwitterUI */,
 				704A0DB0297632280050E314 /* TwitterLite */,
 				704A0DC72976322A0050E314 /* TwitterLiteTests */,
 				704A0DD12976322A0050E314 /* TwitterLiteUITests */,
 				704A0DAF297632280050E314 /* Products */,
+				704A0E4E29767B210050E314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -181,6 +186,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		704A0E4E29767B210050E314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +211,7 @@
 			name = TwitterLite;
 			packageProductDependencies = (
 				704A0DE6297633180050E314 /* LoremSwiftum */,
+				704A0E4F29767B210050E314 /* TwitterUI */,
 			);
 			productName = TwitterLite;
 			productReference = 704A0DAE297632280050E314 /* TwitterLite.app */;
@@ -673,6 +686,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 704A0DE5297633180050E314 /* XCRemoteSwiftPackageReference "LoremSwiftum" */;
 			productName = LoremSwiftum;
+		};
+		704A0E4F29767B210050E314 /* TwitterUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TwitterUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
